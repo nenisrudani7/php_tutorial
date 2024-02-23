@@ -15,7 +15,7 @@ while ($r = mysqli_fetch_array($result)) {
     echo "<td>" . $r['p_cat'] . "</td>";
     echo "<td>" . $r['date'] . "</td>";
 ?>
-    <td><img src="<?php echo 'profile_pictures/' . $r['p_img']; ?>" height="20%" width="25%" /></td>
+    <td><img src="<?php echo 'profile_pictures/' . $r['p_img']; ?>" height="10%" width="15%" /></td>
     <td> <a href="delete.php?em=<?php echo $r['p_id']; ?>"> <input type="button" value="Delete"> </a></td>
 <?php
     echo "</tr>";
